@@ -1,0 +1,153 @@
+
+body{
+	/*background: #1b2631;*/
+	background:#d6eaf8;
+}
+
+#div1 {
+	display: none; 
+}
+#div2 {
+	display: none; 
+}
+#houseTable {
+	display: none; 
+}
+a {
+		text-decoration: none;
+	color: #000000;
+}
+button {
+	text-decoration: none;
+	/*color: #000000;*/
+
+	outline: none;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 10px 20px;
+	position: relative;
+	overflow:hidden;
+	border: 2px solid #fe6637;
+	font-family: 'Montserrat', sans-serif;
+	color: #fe6637;
+	transition: .2 ease-in-out;
+}
+
+button:before{
+	content: "";
+	background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255, .5));
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: -8px;
+	left: -75px;
+	transform: skewx(-45deg);
+}
+
+
+button:hover{
+	background: #fe6637;
+	color:#fff;
+}
+
+button:hover:before{
+	left: 150px;
+	transition: .5s ease-in-out;
+}
+tr:ntn-child(odd){
+	background: #C9E3FE;
+}
+
+.menu-main li{
+	display: inline-block;
+}
+.menu-main li:after{
+	content: "|";
+	color#606060;
+	display: inline-block;
+	vertical-align:top;
+}
+.menu-main li:last-child:after{
+	content:none;
+}
+.menu-main a{
+	text-decoration: none;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	letter-spacing:2px;
+	position: relative;
+	padding-bottom: 20px;
+	margin: 0 34px 0 30px;
+	font-size:17px;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited{
+	color: #9d999d;
+}
+.menu-main a.current, .menu-main a:hover{
+	color: #feb386;
+}
+.menu-main a:before,
+.menu-main a:after{
+	content: "";
+	position: absolute;
+	height: 4px;
+	top: auto;
+	right: 50%;
+	background: #feb386;
+	transition: .8s;
+}
+
+
+.menu-main a:hoverr:before, .menu-main .current:before{
+	left: 0;
+}
+.menu-main a:hover:after, .menu-main .current:after{
+	right:0;
+}
+@media(max-width: 550px){
+	.menu-main {
+		padding-top:0;
+	}
+	.menu-main li{
+		display: block;
+	}
+	.menu-main li:after{
+		content: none;
+	}
+	.menu-main a{
+		padding: 25px 0 20px;
+		margin: 0 30px;
+	}
+}
+
+table{
+	font-family: "Lucida Sans Unicode" , "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	background: white;
+	max-width: 70%;
+	width: 70%;
+	border-collapse: collapse;
+	text-align: left;
+
+}
+th{
+	font-weight: normal;
+	color: #039;
+	border-bottom: 2px solid #6678b1;
+	padding: 10px 8px;
+}
+td{
+	color: #669;
+	padding: 9px 8px;
+	transition: .3s linear;
+}
+tr:hover td{
+	color: #6699ff;
+}
+
+label{
+ label-layout: ;
+}

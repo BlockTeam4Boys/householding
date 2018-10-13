@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<html>
+<head> <!-- Техническая информация о документе -->
+<meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+<title>Страница Админа</title> <!-- Задаем заголовок документа -->
+</head>
+<body>
+	<ul class = "menu-main">
+		<li>
+				<a href = "/sale" class = "current">Owner</a>
+		</li>
+
+		<li>
+				<a href = "/public" class = "current">Public</a>
+		</li>
+	</ul>
+	<div class = "container">
+		<button id = "buttonC" onclick ="viewDiv()">Создание объекта недвижимости</button>
+		<div id = "div1">
+			<table id = "obOfNed">
+				<thead>
+					<tr>
+						<th> Данные объекта недвижимости:
+					<tbody>
+						<tr>
+							<td>
+								<label for = "name" class = "">Собственник</label>
+						<tr>
+							<td>
+								<input id = "Owner" type = "text">
+						<!---->
+
+						<tr>
+							<td>
+								<label for = "name" class = "">Общая площадь</label>
+						<tr>
+							<td>
+								<input id = "Area" type = "text">
+						<!---->
+						<tr>
+							<td>
+								<label for = "name" class = "">Тип объекта недвижимости</label>
+						<tr>
+							<td>
+								<input id = "Residetial" type = "text">
+						<!---->
+						<tr>
+							<td>
+								<label for = "name" class = "">Дата постройки здания</label>
+						<tr>
+							<td>
+								<input id = "Date" type = "text">
+
+						<tr>
+							<td>
+								<button onclick="createHome()" id = "buttonAdd">Внести данные</button>
+			</table>
+		</div>
+	</div>
+
+
+</body>
+<script src="/js/login.js" type="application/javascript" ></script>
+</html>

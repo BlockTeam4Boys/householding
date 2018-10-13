@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Общая страница</title>
+<script src="/js/public.js" type="application/javascript" ></script>
+
+
+</head>
+<body>
+	<ul class = "menu-main">
+		<li>
+				<a href = "/home" class = "current">Admin</a>
+		</li>
+
+		<li>
+				<a href = "/sale" class = "current">Owner</a>
+		</li>
+	</ul>
+
+	<div class = "container">
+		<button id = "buttonC" onclick ="viewDiv()">Просмотреть данные!
+		</button>
+
+
+		<div id = "div1">
+			<table id = "obOfNed">
+				<thead>
+					<tbody>
+						<tr>
+							<td>
+								<label for = "name" class = "">Введите id недвижимости</label>
+						<tr>
+							<td>
+								<input id = "HouseId" type = "text">
+						<tr>
+							<td>
+								<button id = "buttonAdd" onclick = "house_info()">Ввести id</button>
+			</table>
+
+		</div>
+
+	</div>
+
+<div id = "houseTable">
+
+	<div id = "houseTable">
+
+		<button id = "buttonC1" onclick ="tableCreate()">Просмотр данных <br>об объекте недвижимости
+		</button>
+		<table></table>
+	</div>
+
+	<div id = "SaleTable">
+		<button id = "buttonSale1" onclick ="Sale_size()">size
+		</button>
+		<button id = "buttonSale" onclick ="Sale_info()">Просмотр всех<br> предложений о продаже
+		</button>
+		<table></table>
+	</div>
+
+	<label for = "name" class = "">Введите id недвижимости из списка продающихся</label>
+<tr>
+<td>
+	<input id = "buyHouseId" type = "text">
+<tr>
+<td>
+	<button id = "buybuttonAdd" onclick = "buy_house()">Купить дом</button>
+
+
+</div>
+
+
+
+	<div  id = "ZalogTable">
+		<button id = "buttonZalogSize" onclick ="Zalog_Size()">Узнать количество<br> недвижимости в залоге
+		</button>
+		<button id = "buttonZalogInfo" onclick ="Zalog_info()">Просмотр всех<br> предложений о залоге
+		</button>
+		<table></table>
+
+	</div>
+</body>
+</html>

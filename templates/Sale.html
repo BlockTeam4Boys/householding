@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Страница собственника</title>
+
+</head>
+<body>
+
+
+
+	<ul class = "menu-main">
+		<li>
+				<a href = "/home" class = "current">Admin</a>
+		</li>
+
+		<li>
+				<a href = "/public" class = "current">Public</a>
+		</li>
+	</ul>
+	<div class = "container">
+		<button id = "buttonC" onclick ="viewDiv()">Создание предложения о продаже</button>
+		<div id = "div1">
+			<table id = "obOfNed">
+				<thead>
+					<tr>
+						<th>Данные о продаже:
+					<tbody>
+						<tr>
+							<td>
+								<label for = "name" class = "">Объект продажи</label>
+						<tr>
+							<td>
+								<input id = "ObjForSale" type = "text">
+						<!---->
+
+						<tr>
+							<td>
+								<label for = "name" class = "">Стоимость продажи</label>
+						<tr>
+							<td>
+								<input id = "Price" type = "text">
+						<!---->
+
+						<tr>
+							<td>
+								<label for = "name" class = "">Период продажи</label>
+						<tr>
+							<td>
+								<input id = "Srok" type = "text">
+						<tr>
+							<td>
+								<button id = "buttonAdd" onclick="createSale()">Внести данные</button>
+			</table>
+		</div>
+
+		<div id = "mySaleTable">
+			<button id = "buttonSale1" onclick ="mySale_size()">size
+			</button>
+			<button id = "buttonSale" onclick ="mySale_info()">Просмотр <br> объектов недвижимости
+			</button>
+			<table></table>
+		</div>
+
+		<div id = "oSaleTable">
+			<button  onclick ="oSale_size()">size
+			</button>
+			<button  onclick ="oSale_info()">Просмотр всех<br> предложений о продаже
+			</button>
+			<table></table>
+		</div>
+	</div>
+
+
+
+
+	<div id = "pSaleTable">
+		<button  onclick ="pSale_size()">size
+		</button>
+		<button  onclick ="pSale_info()">Просмотр всех<br> моих домов в залоге
+		</button>
+		<table></table>
+	</div>
+	</div>
+
+	<button id = "buttonZalog" onclick ="viewDivZ()">Создание предложения о залоге</button>
+	<div id = "div2">
+		<table id = "Zalog">
+			<thead>
+				<tr>
+					<th>Объект залога:
+				<tbody>
+					<tr>
+						<td>
+							<label for = "name" class = "">Объект залога</label>
+					<tr>
+						<td>
+							<input id = "ObjForZalog" type = "text">
+
+					<!---->
+					<tr>
+						<td>
+							<label for = "name" class = "">Нужная сумма</label>
+					<tr>
+						<td>
+							<input id = "PriceZalog" type = "text">
+					<!---->
+					<tr>
+						<td>
+							<label for = "name" class = "">Срок залога</label>
+					<tr>
+						<td>
+							<input id = "dataZalog" type = "text">
+					<!---->
+
+					<tr>
+						<td>
+							<button id = "buttonAdd" onclick="createZalog()">Внести данные</button>
+		</table>
+	</div>
+
+</body>
+<script src="/js/sale.js" type="application/javascript" ></script>
+</html>
